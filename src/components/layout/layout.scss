@@ -1,0 +1,118 @@
+@import "src/styles/main";
+#layout {
+  height: 100vh;
+  width: 100vw;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    h2 {
+      font-size: 30px;
+      color: $accent-color-white;
+      font-weight: 300;
+      cursor: pointer;
+    }
+    nav {
+      text-align: right;
+      position: relative;
+      h4 {
+        font-size: 20px;
+        color: $accent-color-white;
+        font-weight: 800;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+      #nav-items {
+        position: absolute;
+        right: 0;
+        li {
+          font-size: 40px;
+          font-weight: 700;
+          margin-top: 45px;
+        }
+      }
+      &.menuOpened {
+        h4 {
+          color: $accent-color-purple;
+        }
+      }
+    }
+  }
+  main {
+    height: 100%;
+    transition: filter 0.7s ease;
+  }
+  footer {
+    margin-top: auto;
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    h4 {
+      font-size: 20px;
+      color: $accent-color-white;
+      font-weight: 800;
+      cursor: default;
+    }
+    .socials {
+      width: 131px;
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          span {
+            font-size: 20px;
+            color: $link-default-color;
+            transition: color 0.2s ease;
+            &:hover {
+              color: $accent-color-purple;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+header,
+main,
+footer {
+  padding: 60px;
+}
+
+@media screen and (max-width: 840px) {
+  header,
+  main,
+  footer {
+    padding: 30px;
+  }
+  #layout.opened {
+    main {
+      filter: blur(5px);
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #layout {
+    header {
+      h2 {
+        font-size: 20px;
+      }
+    }
+    footer {
+      h4 {
+        font-size: 15px;
+      }
+    }
+  }
+}

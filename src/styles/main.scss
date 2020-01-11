@@ -1,0 +1,17 @@
+@import "reset";
+@import "fonts";
+@import "vars";
+@include reset();
+
+body {
+  font-family: Lato, sans-serif;
+  color: $accent-color-white;
+}
+
+#__next {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}

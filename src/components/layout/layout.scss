@@ -1,11 +1,22 @@
 @import "src/styles/main";
 #layout {
-  height: 100vh;
   width: 100vw;
   background-color: $bg-color;
   display: flex;
   flex-direction: column;
-
+  position: relative;
+  .vertical-lines {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 0;
+    .colored {
+      height: 100vh;
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
   header {
     box-sizing: border-box;
     display: flex;
@@ -15,6 +26,7 @@
     top: 0;
     z-index: 1;
     h2 {
+      text-shadow: 0 0px 20px #000;
       font-size: 30px;
       color: $accent-color-white;
       font-weight: 300;
@@ -24,6 +36,7 @@
       text-align: right;
       position: relative;
       h4 {
+        text-shadow: 0 0px 20px #000;
         font-size: 20px;
         color: $accent-color-white;
         font-weight: 800;
@@ -34,9 +47,13 @@
         position: absolute;
         right: 0;
         li {
-          font-size: 40px;
-          font-weight: 700;
           margin-top: 45px;
+          a {
+            text-shadow: 0 0px 20px #000;
+            color: $accent-color-white;
+            font-size: 40px;
+            font-weight: 700;
+          }
         }
       }
       &.menuOpened {
@@ -60,6 +77,7 @@
     position: absolute;
     bottom: 0;
     h4 {
+      text-shadow: 0 0px 20px #000;
       font-size: 20px;
       color: $accent-color-white;
       font-weight: 800;
@@ -72,6 +90,7 @@
       li {
         a {
           span {
+            text-shadow: 0 0px 20px #000;
             font-size: 20px;
             color: $link-default-color;
             transition: color 0.2s ease;
@@ -85,14 +104,20 @@
   }
 }
 header,
-main,
 footer {
   padding: 60px;
 }
 
+@media screen and (max-width: 991px) {
+  #layout {
+    .vertical-lines {
+      display: none;
+    }
+  }
+}
+
 @media screen and (max-width: 840px) {
   header,
-  main,
   footer {
     padding: 30px;
   }

@@ -18,7 +18,10 @@
   }
 }
 
-
+@include font("Montserrat", normal, 300, "/fonts/Montserrat-Light.woff2");
+@include font("Montserrat", normal, 500, "/fonts/Montserrat-Medium.woff2");
+@include font("Montserrat", normal, 700, "/fonts/Montserrat-Bold.woff2");
+@include font("Montserrat", normal, 800, "/fonts/Montserrat-Black.woff2");
 @include font("icon", normal, 400, "/fonts/icons.woff");
 
 .icon {

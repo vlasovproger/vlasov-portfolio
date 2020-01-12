@@ -1,0 +1,57 @@
+@import "src/styles/main";
+
+.works-list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  .info {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    h2 {
+      font-size: 50px;
+      font-weight: 700;
+
+      transition: all 0.5s ease;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      margin-top: 90px;
+      hr {
+        width: 28px;
+        height: 0;
+        background-color: $accent-color-white;
+        margin: 0;
+      }
+      p {
+        margin-left: 44px;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+  }
+  &:hover {
+    .info {
+      h2 {
+        font-size: 80px;
+        color: $accent-color-purple;
+      }
+    }
+
+    img {
+      max-width: 70%;
+    }
+  }
+
+  img {
+    max-width: 60%;
+    transition: max-width 0.5s ease;
+  }
+}

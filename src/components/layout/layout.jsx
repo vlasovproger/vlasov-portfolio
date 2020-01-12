@@ -2,13 +2,18 @@ import React from "react";
 import { observer } from "mobx-react";
 import useStores from "../../hooks/use-stores";
 import { useTrail, animated } from "react-spring";
+import Link from "next/link";
 import "./layout.scss";
 
-const Layout = observer(({ children, imgUrl }) => {
+const Layout = observer(({ children }) => {
   const {
     uiStore: { menuIsOpened, toggleMenuButton }
   } = useStores();
-  const items = ["About.", "Works.", "Contact."];
+  const items = [
+    { title: "About.", href: "/about" },
+    { title: "Works.", href: "/works" },
+    { title: "Contact.", href: "/contact" }
+  ];
   const config = { mass: 5, tension: 2000, friction: 200 };
   const trail = useTrail(items.length, {
     config,
@@ -22,37 +27,40 @@ const Layout = observer(({ children, imgUrl }) => {
     <>
       <div id="layout" className={classNames}>
         <header>
-          <h2>Vlasov Portfolio</h2>
-          <nav onClick={toggleMenuButton} className={classNamesNav}>
-            <h4>Menu</h4>
+          <Link href="/" prefetch={false}>
+            <a aria-label="Home">
+              <h2>Vlasov Portfolio.</h2>
+            </a>
+          </Link>
+          <nav className={classNamesNav}>
+            <h4 onClick={toggleMenuButton}>Menu</h4>
             <ul id="nav-items">
               {trail.map(({ x, ...rest }, index) => (
                 <animated.li
-                  key={items[index]}
+                  key={items[index].title}
                   className="trails-text"
                   style={{
                     ...rest,
                     transform: x.interpolate(x => `translate3d(${x}px,0,0)`)
                   }}
                 >
-                  <animated.div>{items[index]}</animated.div>
+                  <animated.div>
+                    <Link href={items[index].href} prefetch={false}>
+                      <a aria-label={items[index].title} onClick={toggleMenuButton}>
+                        {items[index].title}
+                      </a>
+                    </Link>
+                  </animated.div>
                 </animated.li>
               ))}
             </ul>
           </nav>
         </header>
-        <main
-          style={{
-            background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${imgUrl})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover"
-          }}
-        >
+        <main>
           {children}
         </main>
         <footer>
-          <h4>Frontend Developer</h4>
+          <h4>Frontend Developer.</h4>
           <ul className="socials">
             <li>
               <a href="https://github.com/">
@@ -75,5 +83,14 @@ const Layout = observer(({ children, imgUrl }) => {
     </>
   );
 });
+
+
+// <div className="vertical-lines">
+//   <div className="vertical-line"></div>
+//   <div className="vertical-line colored"></div>
+//   <div className="vertical-line colored"></div>
+//   <div className="vertical-line colored"></div>
+//   <div className="vertical-line"></div>
+// </div>
 
 export default Layout;

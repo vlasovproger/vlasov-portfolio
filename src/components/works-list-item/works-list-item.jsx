@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import "./works-list-item.scss";
 
-const WorksListItem = ({ title, subtitle, imageUrl, id }) => {
+const WorksListItem = ({ title, subtitle, imageDefault, imageWebp, id }) => {
   return (
     <div className="works-list-item">
       <div className="info">
@@ -14,7 +14,11 @@ const WorksListItem = ({ title, subtitle, imageUrl, id }) => {
           </a>
         </Link>
       </div>
-      <img src={imageUrl} alt={title} />
+
+      <picture>
+        <source type="image/webp" srcSet={imageWebp} />
+        <img alt={title} src={imageDefault} />
+      </picture>
     </div>
   );
 };

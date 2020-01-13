@@ -12,7 +12,13 @@ const ContactContent = () => {
           <hr />
         </div>
         <div className="info">
-          <img src="/images/contact-image.jpg" alt="contact image" />
+          <picture>
+            <source type="image/webp" srcSet="/images/webp/contact-image.webp" />
+            <img
+              alt="contact image"
+              src="/images/default/contact-image.jpg"
+            />
+          </picture>
           <h1>Vlasov</h1>
           <ul className="contacts">
             <li>

@@ -15,10 +15,14 @@
     .page-title {
       font-size: 120px;
       font-weight: 700;
+      text-align: center;
     }
     .page-subtitle {
       display: flex;
       align-items: center;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 150px;
       hr {
         width: 70px;
         height: 1px;
@@ -29,6 +33,128 @@
         font-size: 40px;
         font-weight: 700;
         margin: 0 35px;
+      }
+    }
+    .info {
+      width: 66%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .about-project {
+        align-self: stretch;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+        li {
+          h4 {
+            font-size: 17px;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+          a,
+          p {
+            color: #828282;
+            font-size: 15px;
+            line-height: 24px;
+            transition: color 0.3s ease;
+            font-weight: 300;
+          }
+          a:hover {
+            color: $accent-color-purple;
+          }
+        }
+      }
+      img {
+        max-width: 100%;
+        filter: grayscale(1) brightness(0.9);
+        transition: filter 0.7s ease;
+        &:hover {
+          filter: grayscale(0) brightness(1);
+        }
+      }
+      .descrption {
+        margin-top: 50px;
+        font-weight: 300;
+        max-width: 90%;
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}
+
+
+@media screen and(max-width: 800px) {
+  .work-details-content {
+    .wrapper {
+      padding: 100px 30px;
+      .page-title {
+        font-size: 100px;
+      }
+      .page-subtitle {
+        margin-bottom: 60px;
+        hr {
+          width: 60px;
+
+        }
+        h4 {
+          text-align: center;
+          font-size: 30px;
+          margin: 0 35px;
+        }
+      }
+      .info {
+        width: 100%;
+        padding: 30px;
+        .about-project {
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+          li {
+            h4 {
+              font-size: 15px;
+            }
+            a,
+            p {
+              font-size: 13px;
+              line-height: 20px;
+            }
+          }
+        }
+        img {
+          max-width: 100%;
+          filter: grayscale(1) brightness(0.9);
+          transition: filter 0.7s ease;
+          &:hover {
+            filter: grayscale(0) brightness(1);
+          }
+        }
+        .descrption {
+          margin-top: 30px;
+          max-width: 100%;
+          font-size: 15px;
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 639px) {
+  .work-details-content {
+    .wrapper {
+      padding: 80px 15px;
+      .page-title {
+        font-size: 50px;
+      }
+      .page-subtitle {
+        hr {
+          width: 55px;
+        }
+        h4 {
+          font-size: 20px;
+          margin: 0 30px;
+        }
       }
     }
   }

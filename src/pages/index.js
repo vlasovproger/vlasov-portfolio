@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 const HomePage = () => {
   return (
     <>
-      <Layout imgUrl="/images/homepage-background.jpeg">
+      <Layout>
         <HomeContent />
       </Layout>
     </>

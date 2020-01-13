@@ -10,6 +10,7 @@
     position: absolute;
     left: 0;
     top: 100px;
+    z-index: 1;
     h2 {
       font-size: 50px;
       font-weight: 700;
@@ -23,7 +24,7 @@
     a {
       display: flex;
       align-items: center;
-      margin-top: 90px;
+      margin-top: 10%;
       hr {
         width: 28px;
         height: 0;
@@ -53,5 +54,48 @@
   img {
     max-width: 60%;
     transition: max-width 0.5s ease;
+    filter: grayscale(1) brightness(0.8);
+    z-index: 0;
+  }
+}
+
+
+@media screen and(max-width: 800px) {
+  .works-list-item {
+    margin-bottom: 60px;
+    .info {
+      margin-top: 100px;
+      align-items: center;
+      position: static;
+      align-self: flex-start;
+      margin-top: 30px;
+      h2 {
+        font-size: 31px;
+        color: $accent-color-purple;
+      }
+      h4 {
+        font-size: 14px;
+      }
+      a {
+        margin-top: 30px;
+      }
+    }
+    img {
+      max-width: 100%;
+      filter: grayscale(1) brightness(0.9);
+      order: -1;
+    }
+    &:hover {
+      .info {
+        h2 {
+          font-size: 31px;
+          color: $accent-color-purple;
+        }
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
   }
 }

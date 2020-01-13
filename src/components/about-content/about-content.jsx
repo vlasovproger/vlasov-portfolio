@@ -12,7 +12,10 @@ const AboutContent = () => {
           <hr />
         </div>
         <div className="info">
-          <img src="/images/about-image.jpg" alt="It's me" />
+          <picture>
+            <source type="image/webp" srcSet="/images/webp/about-image.webp" />
+            <img alt="It's me" src="/images/default/about-image.jpg" />
+          </picture>
           <h1>Vlasov A.</h1>
           <ul className="professions">
             <li>Frontend Developer</li>

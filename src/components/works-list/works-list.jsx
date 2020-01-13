@@ -22,7 +22,8 @@ const WorksList = observer(() => {
             <WorksListItem
               title={work.title}
               subtitle={work.subtitle}
-              imageUrl={work.screenshots[0]}
+              imageDefault={work.imageDefault}
+              imageWebp={work.imageWebp}
               id={work.id}
             />
           </li>

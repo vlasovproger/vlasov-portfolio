@@ -64,17 +64,17 @@ const Layout = observer(({ children }) => {
           <ul className="socials">
             <li>
               <a href="https://github.com/">
-                <span className="icon icon-github"></span>
+                <span className="icon icon-github" aria-label="github"></span>
               </a>
             </li>
             <li>
               <a href="https://linkedin.com/">
-                <span className="icon icon-linkedin"></span>
+                <span className="icon icon-linkedin" aria-label="linkedin"></span>
               </a>
             </li>
             <li>
               <a href="https://t.me/">
-                <span className="icon icon-telegram"></span>
+                <span className="icon icon-telegram" aria-label="telegram"></span>
               </a>
             </li>
           </ul>

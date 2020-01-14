@@ -5,18 +5,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  .vertical-lines {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    z-index: 0;
-    .colored {
-      height: 100vh;
-      width: 1px;
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-  }
   header {
     box-sizing: border-box;
     display: flex;
@@ -24,17 +12,19 @@
     width: 100vw;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     h2 {
       text-shadow: 0 0px 20px #000;
       font-size: 30px;
       color: $accent-color-white;
       font-weight: 300;
       cursor: pointer;
+      user-select: none;
     }
     nav {
       text-align: right;
       position: relative;
+      user-select: none;
       h4 {
         text-shadow: 0 0px 20px #000;
         font-size: 20px;
@@ -46,6 +36,7 @@
       #nav-items {
         position: absolute;
         right: 0;
+
         li {
           margin-top: 45px;
           a {
@@ -69,6 +60,7 @@
     transition: filter 0.7s ease;
   }
   footer {
+    z-index: 2;
     margin-top: auto;
     box-sizing: border-box;
     width: 100vw;
@@ -76,6 +68,7 @@
     justify-content: space-between;
     position: absolute;
     bottom: 0;
+    user-select: none;
     h4 {
       text-shadow: 0 0px 20px #000;
       font-size: 20px;
@@ -108,13 +101,7 @@ footer {
   padding: 60px;
 }
 
-@media screen and (max-width: 991px) {
-  #layout {
-    .vertical-lines {
-      display: none;
-    }
-  }
-}
+
 
 @media screen and (max-width: 840px) {
   header,

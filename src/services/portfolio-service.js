@@ -1,6 +1,19 @@
 const works = [
   {
-    id: 0,
+    id: 1,
+    title: "DNDA Project",
+    subtitle: "Coming soon",
+    descrption:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    client: "None",
+    website: "https://dnda-project.now.sh/",
+    category: "Progressive web application",
+    imageDefault: "/images/default/dnda-project.jpg",
+    imageWebp: "/images/webp/dnda-project.webp",
+    github: "https://github.com/vlasovproger/dnda-project"
+  },
+  {
+    id: 2,
     title: "New Providence",
     subtitle: "Coming soon",
     descrption:
@@ -13,7 +26,7 @@ const works = [
     github: "https://github.com/vlasovproger/new-providence-landing"
   },
   {
-    id: 1,
+    id: 3,
     title: "Clean Corporate Landing",
     subtitle: "Coming soon",
     descrption:

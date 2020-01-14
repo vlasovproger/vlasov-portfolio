@@ -4,11 +4,10 @@ import useStores from "../../hooks/use-stores";
 import useServiceContext from "../../hooks/use-service-context";
 import WorksListItem from "../works-list-item";
 import Link from "next/link";
-import "./works-list.scss";
 
 const WorksList = observer(() => {
   const {
-    uiStore: { works, getAllWorks }
+    worksStore: { works, getAllWorks }
   } = useStores();
   const { portfolioService } = useServiceContext();
   useEffect(() => {

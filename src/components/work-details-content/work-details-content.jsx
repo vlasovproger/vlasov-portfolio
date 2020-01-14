@@ -2,14 +2,16 @@ import React, { useEffect } from "react";
 import { observer } from "mobx-react";
 import useStores from "../../hooks/use-stores";
 import useServiceContext from "../../hooks/use-service-context";
+import VerticalLines from "../vertical-lines";
 
 import "./work-details-content.scss";
 
 const WorkDetailsContent = observer(({ id }) => {
   const {
-    uiStore: { currentWork, getCurrentWork }
+    worksStore: { currentWork, getCurrentWork }
   } = useStores();
   const { portfolioService } = useServiceContext();
+
   useEffect(() => {
     getCurrentWork(id, portfolioService);
   }, [id]);
@@ -24,10 +26,13 @@ const WorkDetailsContent = observer(({ id }) => {
       category,
       imageWebp,
       imageDefault,
-      github
+      github,
+      id
     } = currentWork;
+
     return (
       <div className="work-details-content">
+        <VerticalLines />
         <div className="wrapper">
           <h1 className="page-title">{title}</h1>
           <div className="page-subtitle">
@@ -43,7 +48,14 @@ const WorkDetailsContent = observer(({ id }) => {
               </li>
               <li>
                 <h4>Website</h4>
-                <a href={website}>view</a>
+                <a
+                  href={website}
+                  aria-label="project link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View
+                </a>
               </li>
               <li>
                 <h4>Category</h4>
@@ -51,7 +63,14 @@ const WorkDetailsContent = observer(({ id }) => {
               </li>
               <li>
                 <h4>Github</h4>
-                <a href={github}>view</a>
+                <a
+                  href={github}
+                  aria-label="github"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View
+                </a>
               </li>
             </ul>
 

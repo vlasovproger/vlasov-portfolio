@@ -11,6 +11,7 @@
     left: 0;
     top: 100px;
     z-index: 1;
+    order: 1;
     h2 {
       font-size: 50px;
       font-weight: 700;
@@ -40,18 +41,19 @@
   }
   &:hover {
     .info {
+
       h2 {
         font-size: 80px;
         color: $accent-color-purple;
       }
     }
 
-    img {
+    picture {
       max-width: 70%;
     }
   }
 
-  img {
+  picture {
     max-width: 60%;
     transition: max-width 0.5s ease;
     filter: grayscale(1) brightness(0.8);
@@ -69,6 +71,7 @@
       position: static;
       align-self: flex-start;
       margin-top: 30px;
+
       h2 {
         font-size: 31px;
         color: $accent-color-purple;
@@ -80,10 +83,10 @@
         margin-top: 30px;
       }
     }
-    img {
+    picture {
       max-width: 100%;
       filter: grayscale(1) brightness(0.9);
-      order: -1;
+
     }
     &:hover {
       .info {
@@ -93,7 +96,7 @@
         }
       }
 
-      img {
+      picture {
         max-width: 100%;
       }
     }

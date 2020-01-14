@@ -1,0 +1,17 @@
+.vertical-lines {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 0;
+  .colored {
+    height: 100vh;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+@media screen and (max-width: 991px) {
+  .vertical-lines {
+    display: none;
+  }
+}

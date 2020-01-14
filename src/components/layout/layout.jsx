@@ -18,8 +18,8 @@ const Layout = observer(({ children }) => {
   const trail = useTrail(items.length, {
     config,
     opacity: menuIsOpened ? 1 : 0,
-    x: menuIsOpened ? 0 : 80,
-    from: { opacity: 0, x: 80 }
+    x: menuIsOpened ? 0 : 250,
+    from: { opacity: 0, x: 0 }
   });
   const classNames = menuIsOpened ? "opened" : "";
   const classNamesNav = menuIsOpened ? "menuOpened" : "";
@@ -46,7 +46,10 @@ const Layout = observer(({ children }) => {
                 >
                   <animated.div>
                     <Link href={items[index].href} prefetch={false}>
-                      <a aria-label={items[index].title} onClick={toggleMenuButton}>
+                      <a
+                        aria-label={items[index].title}
+                        onClick={toggleMenuButton}
+                      >
                         {items[index].title}
                       </a>
                     </Link>
@@ -56,25 +59,38 @@ const Layout = observer(({ children }) => {
             </ul>
           </nav>
         </header>
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <footer>
           <h4>Frontend Developer.</h4>
           <ul className="socials">
             <li>
-              <a href="https://github.com/">
-                <span className="icon icon-github" aria-label="github"></span>
+              <a
+                href="https://github.com/vlasovproger/vlasov-portfolio"
+                aria-label="github"
+                target="_blank"
+                rel="noopener"
+              >
+                <span className="icon icon-github"></span>
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/">
-                <span className="icon icon-linkedin" aria-label="linkedin"></span>
+              <a
+                href="https://linkedin.com/"
+                aria-label="linkedin"
+                target="_blank"
+                rel="noopener"
+              >
+                <span className="icon icon-linkedin"></span>
               </a>
             </li>
             <li>
-              <a href="https://t.me/">
-                <span className="icon icon-telegram" aria-label="telegram"></span>
+              <a
+                href="https://t.me/vlasov3087"
+                aria-label="telegram"
+                target="_blank"
+                rel="noopener"
+              >
+                <span className="icon icon-telegram"></span>
               </a>
             </li>
           </ul>
@@ -83,14 +99,5 @@ const Layout = observer(({ children }) => {
     </>
   );
 });
-
-
-// <div className="vertical-lines">
-//   <div className="vertical-line"></div>
-//   <div className="vertical-line colored"></div>
-//   <div className="vertical-line colored"></div>
-//   <div className="vertical-line colored"></div>
-//   <div className="vertical-line"></div>
-// </div>
 
 export default Layout;

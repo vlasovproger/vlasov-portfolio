@@ -7,6 +7,7 @@
   justify-content: center;
 
   .wrapper {
+    z-index: 1;
     width: 1040px;
     padding: 150px 30px;
     display: flex;
@@ -37,7 +38,7 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      img {
+      picture {
         max-width: 50%;
         box-shadow: 0 3px 145px rgba(0, 0, 0, 0.38);
       }
@@ -62,9 +63,9 @@
         margin-top: 88px;
         align-self: center;
         color: rgba(255, 255, 255, 0.4);
-        font-size: 40px;
+        font-size: 20px;
         font-weight: 300;
-        max-width: 625px;
+        max-width: 925px;
       }
     }
   }
@@ -90,7 +91,7 @@
       .info {
         margin-top: 100px;
         align-items: center;
-        img {
+        picture {
           max-width: 80%;
         }
         h1 {
@@ -131,7 +132,7 @@
       .info {
         margin-top: 80px;
         align-items: center;
-        img {
+        picture {
           max-width: 80%;
         }
         h1 {

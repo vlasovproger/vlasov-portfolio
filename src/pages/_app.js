@@ -51,7 +51,7 @@ class MyApp extends App {
             href="/images/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="/manifest.json" />
-          <title>Vlasov - portfolio</title>
+          <title>Vlasov - Portfolio</title>
         </Head>
 
         <PageTransition timeout={300} classNames="page-transition">

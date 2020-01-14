@@ -1,10 +1,12 @@
 import React from "react";
-import WorksList from "../works-list"
+import WorksList from "../works-list";
+import VerticalLines from "../vertical-lines";
 import "./works-content.scss";
 
 const WorksContent = () => {
   return (
     <div className="works-content">
+      <VerticalLines />
       <div className="wrapper">
         <h1 className="page-title">Works</h1>
         <div className="page-subtitle">

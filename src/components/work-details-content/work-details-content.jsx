@@ -16,7 +16,7 @@ const WorkDetailsContent = observer(({ id }) => {
     getCurrentWork(id, portfolioService);
   }, [id]);
 
-  if (currentWork) {
+  if (currentWork && currentWork.id) {
     const {
       title,
       subtitle,
@@ -27,9 +27,9 @@ const WorkDetailsContent = observer(({ id }) => {
       imageWebp,
       imageDefault,
       github,
-      id
+      id,
+      stack
     } = currentWork;
-
     return (
       <div className="work-details-content">
         <VerticalLines />
@@ -79,6 +79,12 @@ const WorkDetailsContent = observer(({ id }) => {
               <img alt="screenshot" src={imageDefault} />
             </picture>
             <p className="descrption">{descrption}</p>
+            <h5>Using technologies:</h5>
+            <ul className="stack">
+              {stack.map(tech => {
+                return <li key={tech}>{tech}</li>;
+              })}
+            </ul>
           </div>
         </div>
       </div>

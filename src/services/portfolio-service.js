@@ -2,42 +2,62 @@ const works = [
   {
     id: 1,
     title: "DNDA Project",
-    subtitle: "Coming soon",
+    subtitle: "A blog with a responsive design",
     descrption:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "A blog simulation project using modern technology and responsive design. Providing the user with all the advantages of PWA, and also includes server rendering.",
     client: "None",
     website: "https://dnda-project.now.sh/",
     category: "Progressive web application",
     imageDefault: "/images/default/dnda-project.jpg",
     imageWebp: "/images/webp/dnda-project.webp",
-    github: "https://github.com/vlasovproger/dnda-project"
+    github: "https://github.com/vlasovproger/dnda-project",
+    stack: [
+      "React",
+      "Redux",
+      "Next.js",
+      "SCSS",
+      "Next Offline",
+      "Smart-grid",
+      "Vanilla Lazyload",
+      "Axios",
+      "Faker"
+    ]
   },
   {
     id: 2,
-    title: "New Providence",
-    subtitle: "Coming soon",
-    descrption:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    client: "None",
-    website: "https://vlasovproger.github.io/new-providence/",
-    category: "Landing Page",
-    imageDefault: "/images/default/new-providence.jpg",
-    imageWebp: "/images/webp/new-providence.webp",
-    github: "https://github.com/vlasovproger/new-providence-landing"
-  },
-  {
-    id: 3,
     title: "Clean Corporate Landing",
-    subtitle: "Coming soon",
+    subtitle: "Beautiful smart-grid landing",
     descrption:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Beautiful Landing made to all standards of modern layout, including delayed image upload and responsive design",
 
     client: "None",
     website: "https://vlasovproger.github.io/clean-corporate-landing/",
     category: "Landing Page",
     imageDefault: "/images/default/clean-corporate-landing.jpg",
     imageWebp: "/images/webp/clean-corporate-landing.webp",
-    github: "https://github.com/vlasovproger/clean-corporate-landing"
+    github: "https://github.com/vlasovproger/clean-corporate-landing",
+    stack: [
+      "Vanilla JS",
+      "Gulp",
+      "SCSS",
+      "Smart-grid",
+      "Vanilla Lazyload",
+      "AOS.js"
+    ]
+  },
+  {
+    id: 3,
+    title: "New Providence",
+    subtitle: "Responsive landing with animations",
+    descrption:
+      "My first project in which I used delayed image upload, responsive design, and a library with js animations",
+    client: "None",
+    website: "https://vlasovproger.github.io/new-providence/",
+    category: "Landing Page",
+    imageDefault: "/images/default/new-providence.jpg",
+    imageWebp: "/images/webp/new-providence.webp",
+    github: "https://github.com/vlasovproger/new-providence-landing",
+    stack: ["Vanilla JS", "Gulp", "SCSS", "Smart-grid", "Vanilla Lazyload"]
   }
 ];
 

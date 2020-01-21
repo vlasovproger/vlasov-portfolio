@@ -1,18 +1,36 @@
 const withSass = require("@zeit/next-sass");
 const withOffline = require("next-offline");
 
-const nextConfig = {
-  webpack: function(config) {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      react: "preact/compat",
-      react$: "preact/compat",
-      "react-dom": "preact/compat",
-      "react-dom$": "preact/compat"
-    };
+function withPreact(nextConfig = {}) {
+  return Object.assign({}, nextConfig, {
+    webpack(config, options) {
+      if (!options.defaultLoaders) {
+        throw new Error(
+          "This plugin is not compatible with Next.js versions below 5.0.0 https://err.sh/next-plugins/upgrade"
+        );
+      }
 
-    return config;
-  },
+      if (options.isServer) {
+        config.externals = ["react", "react-dom", ...config.externals];
+      }
+
+      config.resolve.alias = Object.assign({}, config.resolve.alias, {
+        react: "preact/compat",
+        react$: "preact/compat",
+        "react-dom": "preact/compat",
+        "react-dom$": "preact/compat"
+      });
+
+      if (typeof nextConfig.webpack === "function") {
+        return nextConfig.webpack(config, options);
+      }
+
+      return config;
+    }
+  });
+}
+
+const nextConfig = {
   target: "serverless",
   transformManifest: manifest => ["/"].concat(manifest), // add the homepage to the cache
   // Trying to set NODE_ENV=production when running yarn dev causes a build-time error so we
@@ -42,4 +60,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withOffline(withSass(nextConfig));
+module.exports = withPreact(withOffline(withSass(nextConfig)));

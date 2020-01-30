@@ -34,7 +34,7 @@ const works = [
     category: "Progressive web application",
     imageDefault: "/images/default/just-blog.jpg",
     imageWebp: "/images/webp/just-blog.webp",
-    github: "https://github.com/vlasovproger/dnda-project",
+    github: "https://github.com/vlasovproger/just-blog",
     stack: [
       "React",
       "MobX",

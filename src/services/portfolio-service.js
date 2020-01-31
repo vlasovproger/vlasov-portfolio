@@ -25,6 +25,30 @@ const works = [
   },
   {
     id: 2,
+    title: "JustBlog Project",
+    subtitle: "A blog with a responsive design",
+    descrption:
+      "Justblog is a simple blog with several pages, made using modern technologies such as React, MobX, Next and others. All information is generated on the fly because there is no server part of the project.",
+    client: "None",
+    website: "https://just-blog.now.sh/",
+    category: "Progressive web application",
+    imageDefault: "/images/default/just-blog.jpg",
+    imageWebp: "/images/webp/just-blog.webp",
+    github: "https://github.com/vlasovproger/just-blog",
+    stack: [
+      "React",
+      "MobX",
+      "Next.js",
+      "SCSS",
+      "Next Offline",
+      "Smart-grid",
+      "Vanilla Lazyload",
+      "Axios",
+      "Faker"
+    ]
+  },
+  {
+    id: 3,
     title: "Clean Corporate Landing",
     subtitle: "Beautiful smart-grid landing",
     descrption:
@@ -46,7 +70,7 @@ const works = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "New Providence",
     subtitle: "Responsive landing with animations",
     descrption:

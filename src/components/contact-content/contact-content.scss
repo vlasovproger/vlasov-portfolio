@@ -59,6 +59,12 @@
           font-weight: 300;
           text-align: right;
           margin-bottom: 30px;
+          a {
+            transition: color 0.4s ease;
+            &:hover {
+              color: rgba(255, 255, 255, 0.6);
+            }
+          }
         }
       }
     }

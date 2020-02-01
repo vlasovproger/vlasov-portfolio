@@ -26,12 +26,22 @@ const ContactContent = () => {
             <li>vlasovproger@gmail.com</li>
             <li>
               <a
+                href="https://www.linkedin.com/in/vlasovproger/"
+                aria-label="linkedin"
+                target="_blank"
+                rel="noopener"
+              >
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://t.me/vlasov3087"
                 aria-label="telegram"
                 target="_blank"
                 rel="noopener"
               >
-                t.me/vlasov3087
+                Telegram
               </a>
             </li>
           </ul>

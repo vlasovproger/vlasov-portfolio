@@ -6,6 +6,7 @@ const AboutContent = () => {
   return (
     <div className="about-content">
       <VerticalLines />
+
       <div className="wrapper">
         <h1 className="page-title">About.</h1>
         <div className="page-subtitle">
@@ -25,9 +26,9 @@ const AboutContent = () => {
           <p className="information">
             Hi, my name is Andrei Vlasov and I'm Frontend developer from
             Belarus. I'm 16 but I have been programming for 3 years already. I
-            JavaScript development and everything connected with it.
-            React is my main development tool. I make progressive web
-            applications using Next.js and Mobx/Redux.
+            JavaScript development and everything connected with it. React is my
+            main development tool. I make progressive web applications using
+            Next.js and Mobx/Redux.
           </p>
           <h5>Stack of technologies:</h5>
           <ul className="stack">

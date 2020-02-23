@@ -71,10 +71,10 @@ const works = [
   },
   {
     id: 4,
-    title: "New Providence",
+    title: "New Providence Landing",
     subtitle: "Responsive landing with animations",
     descrption:
-      "My first project in which I used delayed image upload, responsive design, and a library with js animations",
+      "Landing with delayed image upload, responsive design, and a library with js animations",
     client: "None",
     website: "https://vlasovproger.github.io/new-providence/",
     category: "Landing Page",

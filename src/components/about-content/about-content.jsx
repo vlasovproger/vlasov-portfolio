@@ -24,11 +24,13 @@ const AboutContent = () => {
             <li>Frontend Developer</li>
           </ul>
           <p className="information">
-            Hi, my name is Andrei Vlasov and I'm Frontend developer from
-            Belarus. I'm 16 but I have been programming for 3 years already. I
-            JavaScript development and everything connected with it. React is my
-            main development tool. I make progressive web applications using
-            Next.js and Mobx/Redux.
+            A responsible Frontend developer specializing in React. Has
+            experience working with ES6+ syntax, Next Js, Redux, MobX, SCSS,
+            Webpack, Gulp, etc. The reason for finding a job is to develop
+            myself as a specialist. Any suggestions are interesting. I treat the
+            work very responsibly. Always bring what I started to the end. At
+            the moment I am developing projects to fill the portfolio, including
+            3 progressive web applications.
           </p>
           <h5>Stack of technologies:</h5>
           <ul className="stack">

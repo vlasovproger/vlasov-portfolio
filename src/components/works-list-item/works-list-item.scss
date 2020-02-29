@@ -15,7 +15,7 @@
     h2 {
       font-size: 50px;
       font-weight: 700;
-
+      text-shadow: 0 0 40px #000;
       transition: all 0.5s ease;
     }
     h4 {
@@ -41,7 +41,6 @@
   }
   &:hover {
     .info {
-
       h2 {
         font-size: 80px;
         color: $accent-color-purple;
@@ -60,7 +59,6 @@
     z-index: 0;
   }
 }
-
 
 @media screen and(max-width: 800px) {
   .works-list-item {
@@ -86,7 +84,6 @@
     picture {
       max-width: 100%;
       filter: grayscale(1) brightness(0.9);
-
     }
     &:hover {
       .info {

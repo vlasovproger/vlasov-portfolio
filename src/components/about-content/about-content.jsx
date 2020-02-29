@@ -36,6 +36,16 @@ const AboutContent = () => {
           <ul className="stack">
             <li>
               <a
+                href="https://www.typescriptlang.org/"
+                aria-label="TypeScript"
+                target="_blank"
+                rel="noopener"
+              >
+                TypeScript
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://reactjs.org/"
                 aria-label="React"
                 target="_blank"

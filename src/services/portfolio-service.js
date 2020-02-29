@@ -28,7 +28,7 @@ const works = [
     title: "JustBlog Project",
     subtitle: "A blog with a responsive design",
     descrption:
-      "Justblog is a simple blog with several pages, made using modern technologies such as React, MobX, Next and others. All information is generated on the fly because there is no server part of the project.",
+      "Justblog is a simple blog with several pages, made using modern technologies such as React, MobX, Next and others. All information are getting from Firebase.",
     client: "None",
     website: "https://just-blog.now.sh/",
     category: "Progressive web application",
@@ -36,8 +36,10 @@ const works = [
     imageWebp: "/images/webp/just-blog.webp",
     github: "https://github.com/vlasovproger/just-blog",
     stack: [
+      "TypeScript",
       "React",
       "MobX",
+      "Firebase",
       "Next.js",
       "SCSS",
       "Next Offline",

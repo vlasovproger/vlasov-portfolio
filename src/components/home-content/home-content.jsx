@@ -7,7 +7,7 @@ const HomeContent = () => {
     <div className="content">
       <VerticalLines />
       <h1>Andrei Vlasov.</h1>
-      <div>
+      <div className="sub">
         <hr />
         <h2>Web Developer Portfolio.</h2>
       </div>

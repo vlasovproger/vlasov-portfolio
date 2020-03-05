@@ -4,6 +4,7 @@ import useStores from "../../hooks/use-stores";
 import useServiceContext from "../../hooks/use-service-context";
 import WorksListItem from "../works-list-item";
 import Link from "next/link";
+import Spinner from "../spinner";
 
 const WorksList = observer(() => {
   const {
@@ -11,7 +12,9 @@ const WorksList = observer(() => {
   } = useStores();
   const { portfolioService } = useServiceContext();
   useEffect(() => {
-    getAllWorks(portfolioService);
+    if (!works.length) {
+      getAllWorks(portfolioService);
+    }
   }, []);
   return (
     <div className="works-list">

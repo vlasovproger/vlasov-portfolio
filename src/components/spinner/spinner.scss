@@ -1,0 +1,17 @@
+@import "../../styles/vars.scss";
+
+#preloader > p {
+  display: none;
+}
+#preload {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-width: 1px;
+  background: $bg-color url("/images/preload.svg") center center no-repeat;
+  background-size: 128px;
+}

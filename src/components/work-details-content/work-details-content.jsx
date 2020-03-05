@@ -1,22 +1,9 @@
-import React, { useEffect } from "react";
-import { observer } from "mobx-react";
-import useStores from "../../hooks/use-stores";
-import useServiceContext from "../../hooks/use-service-context";
+import React from "react";
 import VerticalLines from "../vertical-lines";
-
 import "./work-details-content.scss";
 
-const WorkDetailsContent = observer(({ id }) => {
-  const {
-    worksStore: { currentWork, getCurrentWork }
-  } = useStores();
-  const { portfolioService } = useServiceContext();
-
-  useEffect(() => {
-    getCurrentWork(id, portfolioService);
-  }, [id]);
-
-  if (currentWork && currentWork.id) {
+const WorkDetailsContent = ({ currentWork }) => {
+  if (currentWork.id) {
     const {
       title,
       subtitle,
@@ -27,9 +14,9 @@ const WorkDetailsContent = observer(({ id }) => {
       imageWebp,
       imageDefault,
       github,
-      id,
       stack
     } = currentWork;
+
     return (
       <div className="work-details-content">
         <VerticalLines />
@@ -92,6 +79,6 @@ const WorkDetailsContent = observer(({ id }) => {
   } else {
     return <div>loading...</div>;
   }
-});
+};
 
 export default WorkDetailsContent;

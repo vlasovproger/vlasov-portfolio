@@ -1,4 +1,16 @@
 {
+  "build": {
+    "env": {
+      "PORTFOLIO_API_KEY": "@portfolioapikey",
+      "PORTFOLIO_AUTH_DOMAIN": "@portfolioauthdomain",
+      "PORTFOLIO_DATABASE_URL": "@portfoliodatabaseurl",
+      "PORTFOLIO_PROJECT_ID": "@portfolioprojectid",
+      "PORTFOLIO_STORAGE_BUCKET": "@portfoliostoragebucket",
+      "PORTFOLIO_MESSAGEING_SENDER_ID": "@portfoliomessagingsenderid",
+      "PORTFOLIO_APP_ID": "@portfolioappid",
+      "PORTFOLIO_MEASUREMENT_ID": "@portfoliomeasurementid"
+    }
+  },
   "version": 2,
   "routes": [
     {

@@ -1,5 +1,6 @@
 @import "src/styles/main";
 #layout {
+  z-index: 5;
   width: 100vw;
   background-color: $bg-color;
   display: flex;
@@ -100,8 +101,6 @@ header,
 footer {
   padding: 60px;
 }
-
-
 
 @media screen and (max-width: 840px) {
   header,

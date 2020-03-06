@@ -3,17 +3,10 @@ import Head from "next/head";
 import React from "react";
 import { register, unregister } from "next-offline/runtime";
 import { PageTransition } from "next-page-transitions";
+import "../../index.d.ts";
+import { AppProps } from "next/app";
 
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {};
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
-
-    return { pageProps };
-  }
   componentDidMount() {
     register();
   }
@@ -21,7 +14,7 @@ class MyApp extends App {
     unregister();
   }
   render() {
-    const { Component, pageProps, router } = this.props;
+    const { Component, pageProps, router }: AppProps = this.props;
     return (
       <>
         <Head>

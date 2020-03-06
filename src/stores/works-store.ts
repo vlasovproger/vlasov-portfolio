@@ -1,18 +1,21 @@
+import { IWork, IPortfolioService } from "./../interfaces/index";
 import { action, observable, configure, runInAction } from "mobx";
 import { useStaticRendering } from "mobx-react";
 import remotedev from "mobx-remotedev";
-
 const isServer = typeof window === "undefined";
 
 useStaticRendering(isServer);
 configure({ enforceActions: "observed" });
 
 class WorksStore {
-  @observable works = [];
-  @observable currentWork = {};
-  @observable loadingWorks = false;
-  @observable loadingWork = false;
-  @action.bound async getAllWorks(portfolioService) {
+  @observable works: Array<IWork> = [];
+
+  @observable currentWork: IWork | {} = {};
+  @observable loadingWorks: boolean = false;
+  @observable loadingWork: boolean = false;
+  @action.bound async getAllWorks(
+    portfolioService: IPortfolioService
+  ): Promise<any> {
     this.loadingWorks = true;
     const data = await portfolioService.getWorks();
     runInAction(() => {
@@ -20,7 +23,10 @@ class WorksStore {
       this.loadingWorks = false;
     });
   }
-  @action.bound async getCurrentWork(id, portfolioService) {
+  @action.bound async getCurrentWork(
+    id: number,
+    portfolioService: IPortfolioService
+  ): Promise<any> {
     this.loadingWork = true;
     const data = await portfolioService.getWork(id);
     runInAction(() => {

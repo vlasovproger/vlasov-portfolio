@@ -4,8 +4,9 @@ import WorksContent from "../components/works-content";
 import { observer } from "mobx-react";
 import useStores from "../hooks/use-stores";
 import Spinner from "../components/spinner";
+import { NextPage } from "next";
 
-const Works = observer(() => {
+const Works: NextPage = observer(() => {
   const {
     worksStore: { loadingWorks }
   } = useStores();

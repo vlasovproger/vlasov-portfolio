@@ -6,8 +6,9 @@ import { observer } from "mobx-react";
 import useStores from "../../hooks/use-stores";
 import useServiceContext from "../../hooks/use-service-context";
 import Spinner from "../../components/spinner";
+import { NextPage } from "next";
 
-const WorkDetails = observer(() => {
+const WorkDetails: NextPage = observer(() => {
   const router = useRouter();
   const { id } = router.query;
   const {

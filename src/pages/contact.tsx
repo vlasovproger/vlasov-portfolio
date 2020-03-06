@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../components/layout";
 import ContactContent from "../components/contact-content";
+import { NextPage } from "next";
 
-const About = () => {
+const About: NextPage = () => {
   return (
     <Layout>
       <ContactContent />

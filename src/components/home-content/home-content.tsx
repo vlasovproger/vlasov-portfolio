@@ -2,7 +2,7 @@ import React from "react";
 import VerticalLines from "../vertical-lines";
 import "./home-content.scss";
 
-const HomeContent = () => {
+const HomeContent: React.FC = () => {
   return (
     <div className="content">
       <VerticalLines />

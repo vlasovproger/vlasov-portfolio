@@ -18,7 +18,7 @@ const WorkDetails: NextPage = observer(() => {
 
   useEffect(() => {
     if (id) {
-      getCurrentWork(id, portfolioService);
+      getCurrentWork(+id, portfolioService);
     }
   }, [id]);
 

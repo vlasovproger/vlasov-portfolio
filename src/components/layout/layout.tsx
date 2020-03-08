@@ -5,7 +5,7 @@ import { useTrail, animated } from "react-spring";
 import Link from "next/link";
 import "./layout.scss";
 
-const Layout = observer(({ children }) => {
+const Layout: React.FC = observer(({ children }) => {
   const {
     uiStore: { menuIsOpened, toggleMenuButton }
   } = useStores();
@@ -41,6 +41,7 @@ const Layout = observer(({ children }) => {
                   className="trails-text"
                   style={{
                     ...rest,
+                    // @ts-ignore
                     transform: x.interpolate(x => `translate3d(${x}px,0,0)`)
                   }}
                 >

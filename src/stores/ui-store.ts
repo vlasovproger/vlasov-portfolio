@@ -8,8 +8,8 @@ useStaticRendering(isServer);
 configure({ enforceActions: "observed" });
 
 class UiStore {
-  @observable menuIsOpened = false;
-  @action.bound toggleMenuButton() {
+  @observable menuIsOpened: boolean = false;
+  @action.bound toggleMenuButton(): void {
     this.menuIsOpened = !this.menuIsOpened;
   }
 }

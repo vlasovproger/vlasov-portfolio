@@ -1,8 +1,13 @@
 import React from "react";
 import VerticalLines from "../vertical-lines";
 import "./work-details-content.scss";
+import { IWorkDetails } from "../../interfaces";
 
-const WorkDetailsContent = ({ currentWork }) => {
+interface Props {
+  currentWork: IWorkDetails;
+}
+
+const WorkDetailsContent: React.FC<Props> = ({ currentWork }) => {
   if (currentWork.id) {
     const {
       title,

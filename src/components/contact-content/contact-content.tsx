@@ -2,7 +2,7 @@ import React from "react";
 import VerticalLines from "../vertical-lines";
 import "./contact-content.scss";
 
-const ContactContent = () => {
+const ContactContent: React.FC = () => {
   return (
     <div className="contact-content">
       <VerticalLines />

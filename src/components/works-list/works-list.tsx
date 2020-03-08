@@ -3,10 +3,8 @@ import { observer } from "mobx-react";
 import useStores from "../../hooks/use-stores";
 import useServiceContext from "../../hooks/use-service-context";
 import WorksListItem from "../works-list-item";
-import Link from "next/link";
-import Spinner from "../spinner";
 
-const WorksList = observer(() => {
+const WorksList: React.FC = observer(() => {
   const {
     worksStore: { works, getAllWorks }
   } = useStores();

@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import "./spinner.scss";
 
-const Spinner = () => {
+const Spinner: React.FC = () => {
   useEffect(() => {
-    const preloader = document.getElementById("preload");
-    function fadeOutnojquery(el) {
+    const preloader: HTMLElement = document.getElementById(
+      "preload"
+    ) as HTMLElement;
+    function fadeOutnojquery(el: HTMLElement) {
       el.style.opacity = "1";
       const interhellopreloader = setInterval(function() {
         el.style.opacity = (Number(el.style.opacity) - 0.05).toString();

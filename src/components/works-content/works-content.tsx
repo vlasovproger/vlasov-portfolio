@@ -3,7 +3,7 @@ import WorksList from "../works-list";
 import VerticalLines from "../vertical-lines";
 import "./works-content.scss";
 
-const WorksContent = () => {
+const WorksContent: React.FC = () => {
   return (
     <div className="works-content">
       <VerticalLines />

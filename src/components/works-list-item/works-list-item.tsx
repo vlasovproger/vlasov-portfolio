@@ -1,8 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import { IWork } from "../../interfaces";
 import "./works-list-item.scss";
 
-const WorksListItem = ({ title, subtitle, imageDefault, imageWebp, id }) => {
+const WorksListItem: React.FC<IWork> = ({
+  title,
+  subtitle,
+  imageDefault,
+  imageWebp,
+  id
+}) => {
   return (
     <div className="works-list-item">
       <div className="info">

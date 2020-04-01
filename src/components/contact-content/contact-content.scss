@@ -146,3 +146,40 @@
     }
   }
 }
+
+@media screen and(max-width: 400px) {
+  .contact-content {
+    .wrapper {
+      padding: 70px 10px;
+      .page-title {
+        font-size: 60px;
+      }
+      .page-subtitle {
+        hr {
+          width: 50px;
+        }
+        h4 {
+          margin: 0 15px;
+        }
+      }
+      .info {
+        margin-top: 80px;
+        align-items: center;
+        picture {
+          max-width: 80%;
+        }
+        h1 {
+          font-size: 50px;
+          position: static;
+        }
+        .contacts {
+          position: static;
+          li {
+            font-size: 25px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

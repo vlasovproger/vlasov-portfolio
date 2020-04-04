@@ -24,13 +24,13 @@ const AboutContent: React.FC = () => {
             <li>Frontend Developer</li>
           </ul>
           <p className="information">
-            A responsible Frontend developer specializing in React. Has
-            experience working with ES6+ syntax, Next Js, Redux, MobX, SCSS,
-            Webpack, Gulp, etc. The reason for finding a job is to develop
-            myself as a specialist. Any suggestions are interesting. I treat the
-            work very responsibly. Always bring what I started to the end. At
-            the moment I am developing projects to fill the portfolio, including
-            3 progressive web applications.
+            A responsible Frontend developer specializing in React. I have
+            experience with ES6+ syntax, Next Js, Redux, MobX, SCSS, Webpack,
+            Gulp, etc. The reason for finding a job is to develop myself as a
+            specialist. All suggestions are interesting. I treat the work very
+            responsibly. I Always finish what I started to the end. At the
+            moment I am developing projects to fill the portfolio, including 3
+            progressive web applications.
           </p>
           <h5>Stack of technologies:</h5>
           <ul className="stack">

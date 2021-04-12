@@ -1,0 +1,234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactContent should render component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="contact-content"
+      >
+        <div
+          class="vertical-lines"
+        >
+          <div
+            class="vertical-line"
+          />
+          <div
+            class="vertical-line colored"
+          />
+          <div
+            class="vertical-line colored"
+          />
+          <div
+            class="vertical-line colored"
+          />
+          <div
+            class="vertical-line"
+          />
+        </div>
+        <div
+          class="wrapper"
+        >
+          <h1
+            class="page-title"
+          >
+            Contact.
+          </h1>
+          <div
+            class="page-subtitle"
+          >
+            <hr />
+            <h4>
+              Contact me for your projects
+            </h4>
+            <hr />
+          </div>
+          <div
+            class="info"
+          >
+            <picture>
+              <source
+                srcset="/images/webp/contact-image.webp"
+                type="image/webp"
+              />
+              <img
+                alt="contact image"
+                src="/images/default/contact-image.jpg"
+              />
+            </picture>
+            <h1>
+              Vlasov
+            </h1>
+            <ul
+              class="contacts"
+            >
+              <li>
+                vlasovproger@gmail.com
+              </li>
+              <li>
+                <a
+                  aria-label="linkedin"
+                  href="https://www.linkedin.com/in/vlasovproger/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="telegram"
+                  href="https://t.me/vlasov3087"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Telegram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="contact-content"
+    >
+      <div
+        class="vertical-lines"
+      >
+        <div
+          class="vertical-line"
+        />
+        <div
+          class="vertical-line colored"
+        />
+        <div
+          class="vertical-line colored"
+        />
+        <div
+          class="vertical-line colored"
+        />
+        <div
+          class="vertical-line"
+        />
+      </div>
+      <div
+        class="wrapper"
+      >
+        <h1
+          class="page-title"
+        >
+          Contact.
+        </h1>
+        <div
+          class="page-subtitle"
+        >
+          <hr />
+          <h4>
+            Contact me for your projects
+          </h4>
+          <hr />
+        </div>
+        <div
+          class="info"
+        >
+          <picture>
+            <source
+              srcset="/images/webp/contact-image.webp"
+              type="image/webp"
+            />
+            <img
+              alt="contact image"
+              src="/images/default/contact-image.jpg"
+            />
+          </picture>
+          <h1>
+            Vlasov
+          </h1>
+          <ul
+            class="contacts"
+          >
+            <li>
+              vlasovproger@gmail.com
+            </li>
+            <li>
+              <a
+                aria-label="linkedin"
+                href="https://www.linkedin.com/in/vlasovproger/"
+                rel="noopener"
+                target="_blank"
+              >
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="telegram"
+                href="https://t.me/vlasov3087"
+                rel="noopener"
+                target="_blank"
+              >
+                Telegram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

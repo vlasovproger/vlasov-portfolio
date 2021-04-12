@@ -8,7 +8,7 @@ interface Props {
 }
 
 const WorkDetailsContent: React.FC<Props> = ({ currentWork }) => {
-  if (currentWork.id) {
+  if (currentWork && currentWork.id) {
     const {
       title,
       subtitle,

@@ -10,7 +10,7 @@ const WorksList: React.FC = observer(() => {
   } = useStores();
   const { portfolioService } = useServiceContext();
   useEffect(() => {
-    if (!works.length) {
+    if (!works.length) {      
       getAllWorks(portfolioService);
     }
   }, []);

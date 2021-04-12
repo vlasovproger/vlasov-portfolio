@@ -1,0 +1,456 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutContent should render component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="about-content"
+      >
+        <div
+          class="vertical-lines"
+        >
+          <div
+            class="vertical-line"
+          />
+          <div
+            class="vertical-line colored"
+          />
+          <div
+            class="vertical-line colored"
+          />
+          <div
+            class="vertical-line colored"
+          />
+          <div
+            class="vertical-line"
+          />
+        </div>
+        <div
+          class="wrapper"
+        >
+          <h1
+            class="page-title"
+          >
+            About.
+          </h1>
+          <div
+            class="page-subtitle"
+          >
+            <hr />
+            <h4>
+              See some info about me
+            </h4>
+            <hr />
+          </div>
+          <div
+            class="info"
+          >
+            <picture>
+              <source
+                srcset="/images/webp/about-image.webp"
+                type="image/webp"
+              />
+              <img
+                alt="It's me"
+                src="/images/default/about-image.jpg"
+              />
+            </picture>
+            <h1>
+              Vlasov A.
+            </h1>
+            <ul
+              class="professions"
+            >
+              <li>
+                Frontend Developer
+              </li>
+            </ul>
+            <p
+              class="information"
+            >
+              A responsible Frontend developer specializing in React. I have experience with ES6+ syntax, Next Js, Redux, MobX, SCSS, Webpack, Gulp, etc. The reason for finding a job is to develop myself as a specialist. All suggestions are interesting. I treat the work very responsibly. I Always finish what I started to the end. At the moment I am developing projects to fill the portfolio, including 3 progressive web applications.
+            </p>
+            <h5>
+              Stack of technologies:
+            </h5>
+            <ul
+              class="stack"
+            >
+              <li>
+                <a
+                  aria-label="TypeScript"
+                  href="https://www.typescriptlang.org/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  TypeScript
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="React"
+                  href="https://reactjs.org/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  React
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="MobX"
+                  href="https://mobx.js.org/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  MobX
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="Redux"
+                  href="https://redux.js.org/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Redux
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="Next"
+                  href="https://nextjs.org/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Next
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="SCSS"
+                  href="https://sass-lang.com/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  SCSS
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="Gulp"
+                  href="https://gulpjs.com/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Gulp
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="Webpack"
+                  href="https://webpack.js.org/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Webpack
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="React-spring"
+                  href="https://www.react-spring.io/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  React-spring
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="  Vanilla Lazyload"
+                  href="https://www.andreaverlicchi.eu/lazyload/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Vanilla Lazyload
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="Smart-grid"
+                  href="https://github.com/dmitry-lavrik/smart-grid"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  Smart-grid
+                </a>
+              </li>
+              <li>
+                Vanilla JavaScript
+              </li>
+              <li>
+                CSS3
+              </li>
+              <li>
+                HTML5
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="about-content"
+    >
+      <div
+        class="vertical-lines"
+      >
+        <div
+          class="vertical-line"
+        />
+        <div
+          class="vertical-line colored"
+        />
+        <div
+          class="vertical-line colored"
+        />
+        <div
+          class="vertical-line colored"
+        />
+        <div
+          class="vertical-line"
+        />
+      </div>
+      <div
+        class="wrapper"
+      >
+        <h1
+          class="page-title"
+        >
+          About.
+        </h1>
+        <div
+          class="page-subtitle"
+        >
+          <hr />
+          <h4>
+            See some info about me
+          </h4>
+          <hr />
+        </div>
+        <div
+          class="info"
+        >
+          <picture>
+            <source
+              srcset="/images/webp/about-image.webp"
+              type="image/webp"
+            />
+            <img
+              alt="It's me"
+              src="/images/default/about-image.jpg"
+            />
+          </picture>
+          <h1>
+            Vlasov A.
+          </h1>
+          <ul
+            class="professions"
+          >
+            <li>
+              Frontend Developer
+            </li>
+          </ul>
+          <p
+            class="information"
+          >
+            A responsible Frontend developer specializing in React. I have experience with ES6+ syntax, Next Js, Redux, MobX, SCSS, Webpack, Gulp, etc. The reason for finding a job is to develop myself as a specialist. All suggestions are interesting. I treat the work very responsibly. I Always finish what I started to the end. At the moment I am developing projects to fill the portfolio, including 3 progressive web applications.
+          </p>
+          <h5>
+            Stack of technologies:
+          </h5>
+          <ul
+            class="stack"
+          >
+            <li>
+              <a
+                aria-label="TypeScript"
+                href="https://www.typescriptlang.org/"
+                rel="noopener"
+                target="_blank"
+              >
+                TypeScript
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="React"
+                href="https://reactjs.org/"
+                rel="noopener"
+                target="_blank"
+              >
+                React
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="MobX"
+                href="https://mobx.js.org/"
+                rel="noopener"
+                target="_blank"
+              >
+                MobX
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Redux"
+                href="https://redux.js.org/"
+                rel="noopener"
+                target="_blank"
+              >
+                Redux
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Next"
+                href="https://nextjs.org/"
+                rel="noopener"
+                target="_blank"
+              >
+                Next
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="SCSS"
+                href="https://sass-lang.com/"
+                rel="noopener"
+                target="_blank"
+              >
+                SCSS
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Gulp"
+                href="https://gulpjs.com/"
+                rel="noopener"
+                target="_blank"
+              >
+                Gulp
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Webpack"
+                href="https://webpack.js.org/"
+                rel="noopener"
+                target="_blank"
+              >
+                Webpack
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="React-spring"
+                href="https://www.react-spring.io/"
+                rel="noopener"
+                target="_blank"
+              >
+                React-spring
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="  Vanilla Lazyload"
+                href="https://www.andreaverlicchi.eu/lazyload/"
+                rel="noopener"
+                target="_blank"
+              >
+                Vanilla Lazyload
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Smart-grid"
+                href="https://github.com/dmitry-lavrik/smart-grid"
+                rel="noopener"
+                target="_blank"
+              >
+                Smart-grid
+              </a>
+            </li>
+            <li>
+              Vanilla JavaScript
+            </li>
+            <li>
+              CSS3
+            </li>
+            <li>
+              HTML5
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -16,7 +16,7 @@ class WorksStore {
   @action.bound async getAllWorks(
     portfolioService: IPortfolioService
   ): Promise<any> {
-    this.loadingWorks = true;
+    this.loadingWorks = true;    
     const data = await portfolioService.getWorks();
     runInAction(() => {
       this.works = data;
